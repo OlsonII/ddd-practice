@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hdv6bBls0RlYwwyzwPyrE4KlVu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="ToolWindowCommit.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\Proyectos\Node\Nest\ddd-practice\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="D:\Proyectos\Node\Nest\ddd-practice\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Proyectos\Node\Nest\ddd-practice" />
+      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\application" />
+      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\database" />
+      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\domain" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\database\migrations" />
+      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\base" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start:dev">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:debug" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:debug" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.start:debug" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="" />
+      <created>1600353609138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600353609138</updated>
+      <workItem from="1600353610193" duration="3259000" />
+      <workItem from="1600379325688" duration="2412000" />
+      <workItem from="1600434417527" duration="1445000" />
+      <workItem from="1600482386337" duration="4978000" />
+      <workItem from="1600612108241" duration="3652000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1600485084961">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600485084961" />
+    <state x="1170" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600488363812">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1170" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600488363812" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1600615612183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600615612183" />
+    <state x="831" y="418" key="Github.ShareDialog" timestamp="1600615805154">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="831" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600615805154" />
+    <state x="774" y="223" key="Github.UntrackedFilesDialog" timestamp="1600615831303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="774" y="223" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600615831303" />
+    <state width="1899" height="447" key="GridCell.Tab.0.bottom" timestamp="1600615773225">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="447" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600615773225" />
+    <state width="1899" height="447" key="GridCell.Tab.0.center" timestamp="1600615773224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="447" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600615773224" />
+    <state width="1899" height="447" key="GridCell.Tab.0.left" timestamp="1600615773224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="447" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600615773224" />
+    <state width="1899" height="447" key="GridCell.Tab.0.right" timestamp="1600615773224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="447" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600615773224" />
+    <state x="783" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600615679096">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="783" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600615679096" />
+    <state x="1216" y="296" key="refactoring.ChangeSignatureDialog" timestamp="1600354511177">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1216" y="296" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600354511177" />
+  </component>
+</project>
