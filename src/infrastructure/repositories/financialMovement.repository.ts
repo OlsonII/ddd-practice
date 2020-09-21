@@ -6,4 +6,10 @@ import { GenericRepository } from '../base/generic.repository';
 
 @Injectable()
 @EntityRepository(FinancialMovementOrm)
-export class FinancialMovementRepository extends GenericRepository<FinancialMovementOrm>{}
+export class FinancialMovementRepository extends GenericRepository<FinancialMovementOrm>{
+
+  searchAllById(id: any): Promise<FinancialMovementOrm[]>{
+    return this.find({ where: { bankAccount: id} });
+  }
+
+}

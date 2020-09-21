@@ -22,6 +22,8 @@ export class ConsignBankAccountService{
   async execute(request: ConsignBankAccountRequest) : Promise<ConsignBankAccountResponse>{
 
     const accountOrm = await this.accountRepository.searchData(request.number);
+    accountOrm.movements = await this.movementRepository.searchAllById(accountOrm.number);
+    //TODO: IMPLEMENT ABSTRACT FACTORY
     if(accountOrm != undefined){
       const bankAccount: BankAccount = new SavingsAccount();
       bankAccount.name = accountOrm.name;

@@ -13,6 +13,7 @@ export class GenericRepository<T> extends Repository<T> implements IRepository<T
     return this.find();
   }
 
+
   searchData(id: any): Promise<T> {
     return this.findOne(id);
   }
