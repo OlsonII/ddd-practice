@@ -1,14 +1,17 @@
 import { BankAccount } from '../domain/entity/bankAccount.entity';
 import { BankAccountRepository } from '../infrastructure/repositories/bankAccount.repository';
 import { SavingsAccount } from '../domain/entity/savingsAccount.entity';
+import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Connection } from 'typeorm';
 
+@Injectable()
 export class CreateBankAccountService{
 
   repository: BankAccountRepository;
 
-
-  constructor(repository: BankAccountRepository) {
-    this.repository = repository;
+  constructor(private readonly connection: Connection) {
+    this.repository = this.connection.getCustomRepository(BankAccountRepository);
   }
 
   public async execute(request: CreateBankAccountRequest): Promise<CreateBankAccountResponse>{
@@ -20,8 +23,9 @@ export class CreateBankAccountService{
       newBankAccount.city = request.city;
       newBankAccount.balance = 0;
       newBankAccount.name = request.name;
-      await this.repository.saveData(newBankAccount);
-      return new CreateBankAccountResponse('Cuenta de ' + request.type + ' creada satisfactoriamente');
+      newBankAccount.movements = []
+      const savedData = await this.repository.saveData(newBankAccount);
+      return new CreateBankAccountResponse('Cuenta de '+ request.type + ' ' + savedData.number + ' creada satisfactoriamente');
     }
     return new CreateBankAccountResponse('El numero de cuenta ya existe');
   }
@@ -31,7 +35,7 @@ export class CreateBankAccountRequest{
   public name: string;
   public number: string;
   public city: string;
-  public type: string
+  public type: string;
 }
 
 export class CreateBankAccountResponse{

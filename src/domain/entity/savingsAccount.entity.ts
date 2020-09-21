@@ -7,6 +7,11 @@ export class SavingsAccount extends BankAccount{
   private maxWithdrawal = 20000;
   private costWithdrawal = 5000;
 
+  constructor() {
+    super();
+    this.movements = [];
+  }
+
   public consign(transaction: Transaction) {
     if(this.verifyFirstConsign() && transaction.value >= 50000){
       super.consign(transaction);
@@ -44,7 +49,11 @@ export class SavingsAccount extends BankAccount{
   }
 
   private verifyFirstConsign() : boolean {
-    return this.movements.length == 0;
+    if (this.movements == undefined){
+      this.movements = []
+      return true;
+    }
+    return false;
   }
 
 }

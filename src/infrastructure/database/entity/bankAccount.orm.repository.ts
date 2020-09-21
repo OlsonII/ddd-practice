@@ -1,5 +1,5 @@
 import { FinancialMovementOrm } from './financialMovement.orm.repository';
-import { Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, OneToMany, PrimaryColumn } from 'typeorm';
 
 @Entity()
 export class BankAccountOrm{
@@ -16,7 +16,7 @@ export class BankAccountOrm{
   @Column()
   public city: string;
 
-  @OneToMany(type => FinancialMovementOrm, financialMovement => financialMovement.id)
+  @OneToMany(type => FinancialMovementOrm, financialMovement => financialMovement.bankAccount)
   public movements: FinancialMovementOrm[];
 
 }

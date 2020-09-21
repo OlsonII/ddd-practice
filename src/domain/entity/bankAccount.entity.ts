@@ -10,11 +10,18 @@ export class BankAccount implements IFinancialServicesInterface{
   public city: string;
   public movements: FinancialMovement[];
 
+  constructor() {
+    this.balance = 0;
+    this.movements = [];
+  }
+
   public consign(transaction: Transaction) {
     const movement: FinancialMovement = new FinancialMovement();
-    movement.consignValue = transaction.value;
+    movement.bankAccount = this.number;
+    movement.consignValue = parseInt(transaction.value.toString());
     movement.movementDate = Date();
-    this.balance += transaction.value
+    movement.withdrawalValue = 0;
+    this.balance += movement.consignValue;
     this.movements.push(movement);
   }
 

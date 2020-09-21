@@ -1,15 +1,17 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { BankAccountOrm } from './bankAccount.orm.repository';
 
 @Entity()
 export class FinancialMovementOrm{
 
   @PrimaryGeneratedColumn()
   id: number;
-  @Column()
+  @ManyToOne(type => BankAccountOrm, account => account.movements)
+  @JoinColumn({name : 'bankAccount'})
   bankAccount: string;
-  @Column()
+  @Column({default: 0})
   consignValue: number;
-  @Column()
+  @Column({default: 0})
   withdrawalValue: number;
   @Column()
   movementDate: string;
