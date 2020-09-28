@@ -1,0 +1,1 @@
+{"version":3,"file":"bankAccount.factory.js","sourceRoot":"","sources":["../../../src/domain/factory/bankAccount.factory.ts"],"names":[],"mappings":";;;AACA,2EAAiE;AACjE,2EAAiE;AAEjE,MAAa,kBAAkB;IAEtB,MAAM,CAAC,WAAmB;QAC/B,QAAQ,WAAW,EAAC;YAClB,KAAK,QAAQ;gBACX,OAAO,IAAI,sCAAc,EAAE,CAAC;YAC9B,KAAK,WAAW;gBACd,OAAO,IAAI,sCAAc,EAAE,CAAC;SAC/B;IACH,CAAC;CACF;AAVD,gDAUC"}

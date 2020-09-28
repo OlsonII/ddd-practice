@@ -1,4 +1,3 @@
-/*
 import {MigrationInterface, QueryRunner} from "typeorm";
 
 export class nueva1600613278670 implements MigrationInterface {
@@ -15,4 +14,3 @@ export class nueva1600613278670 implements MigrationInterface {
     }
 
 }
-*/

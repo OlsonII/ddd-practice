@@ -1,30 +1,26 @@
 import { BankAccount } from '../domain/entity/bankAccount.entity';
-import { BankAccountRepository } from '../infrastructure/repositories/bankAccount.repository';
-import { SavingsAccount } from '../domain/entity/savingsAccount.entity';
 import { Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Connection } from 'typeorm';
+import { IUnitOfWork } from '../infrastructure/contracts/unitOfWork.interface';
+import { BankAccountFactory } from '../domain/factory/bankAccount.factory';
+import { UnitOfWork } from '../infrastructure/unitOfWork/unitOfWork';
 
-@Injectable()
+
 export class CreateBankAccountService{
 
-  repository: BankAccountRepository;
-
-  constructor(private readonly connection: Connection) {
-    this.repository = this.connection.getCustomRepository(BankAccountRepository);
-  }
+  constructor(private readonly _unitOfWork : IUnitOfWork) { }
 
   public async execute(request: CreateBankAccountRequest): Promise<CreateBankAccountResponse>{
+    await this._unitOfWork.start();
     let newBankAccount: BankAccount;
-    const bankAccount = await this.repository.searchData(request.number);
+    const bankAccount = await this._unitOfWork.bankAccountRepository.searchData(request.number);
     if (bankAccount == undefined){
-      newBankAccount = new SavingsAccount();
+      newBankAccount = new BankAccountFactory().create(request.type);
       newBankAccount.number = request.number;
       newBankAccount.city = request.city;
       newBankAccount.balance = 0;
       newBankAccount.name = request.name;
       newBankAccount.movements = []
-      const savedData = await this.repository.saveData(newBankAccount);
+      const savedData = await this._unitOfWork.bankAccountRepository.saveData(newBankAccount);
       return new CreateBankAccountResponse('Cuenta de '+ request.type + ' ' + savedData.number + ' creada satisfactoriamente');
     }
     return new CreateBankAccountResponse('El numero de cuenta ya existe');

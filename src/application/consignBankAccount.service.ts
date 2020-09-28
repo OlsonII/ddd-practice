@@ -6,34 +6,30 @@ import { Transaction } from '../domain/entity/transaction.entity';
 import { CreateBankAccountResponse } from './createBankAccount.service';
 import { Injectable } from '@nestjs/common';
 import { FinancialMovementRepository } from '../infrastructure/repositories/financialMovement.repository';
+import { IUnitOfWork } from '../infrastructure/contracts/unitOfWork.interface';
+import { BankAccountFactory } from '../domain/factory/bankAccount.factory';
+import { UnitOfWork } from '../infrastructure/unitOfWork/unitOfWork';
 
-@Injectable()
+
 export class ConsignBankAccountService{
 
-  accountRepository: BankAccountRepository;
-  movementRepository: FinancialMovementRepository;
 
-
-  constructor(private readonly connection: Connection) {
-    this.accountRepository = this.connection.getCustomRepository(BankAccountRepository);
-    this.movementRepository = this.connection.getCustomRepository(FinancialMovementRepository);
-  }
+  constructor(private readonly _unitOfWork: IUnitOfWork) {}
 
   async execute(request: ConsignBankAccountRequest) : Promise<ConsignBankAccountResponse>{
-
-    const accountOrm = await this.accountRepository.searchData(request.number);
-    accountOrm.movements = await this.movementRepository.searchAllById(accountOrm.number);
-    //TODO: IMPLEMENT ABSTRACT FACTORY
+    await this._unitOfWork.start();
+    const accountOrm = await this._unitOfWork.bankAccountRepository.searchData(request.number);
+    accountOrm.movements = await this._unitOfWork.financialMovementRepository.searchAllById(accountOrm.number);
     if(accountOrm != undefined){
-      const bankAccount: BankAccount = new SavingsAccount();
+      const bankAccount: BankAccount = new BankAccountFactory().create(request.type);
       bankAccount.name = accountOrm.name;
       bankAccount.city = accountOrm.city;
       bankAccount.number = accountOrm.number;
       bankAccount.balance = accountOrm.balance;
       bankAccount.movements = accountOrm.movements;
       bankAccount.consign(new Transaction(request.value, request.city));
-      await this.accountRepository.saveData(bankAccount);
-      await this.movementRepository.saveData(bankAccount.movements[bankAccount.movements.length - 1]);
+      await this._unitOfWork.bankAccountRepository.saveData(bankAccount);
+      await this._unitOfWork.financialMovementRepository.saveData(bankAccount.movements[bankAccount.movements.length - 1]);
       return new CreateBankAccountResponse('Se consignaron ' + request.value + ' a la cuenta: ' + bankAccount.number + ' balance total: ' + bankAccount.balance);
     }
     return new CreateBankAccountResponse('El numero de cuenta no existe');
@@ -45,6 +41,7 @@ export class ConsignBankAccountRequest{
   public number: string;
   public city: string;
   public value: number;
+  public type: string;
 }
 
 export class ConsignBankAccountResponse{

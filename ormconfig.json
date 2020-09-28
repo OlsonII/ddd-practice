@@ -5,23 +5,8 @@
    "username": "root",
    "password": "1981",
    "database": "FINANCIAL_SERVICES",
-   "synchronize": false,
-   "logging": false,
-   "entities": [
-      "dist/infrastructure/database/entity/*.js"
-   ],
-   "migrations": [
-      "src/infrastructure/database/migrations/*{.ts,.js}"
-   ]
-}, {
-   "name": "test",
-   "type": "mysql",
-   "host": "localhost",
-   "port": 3306,
-   "username": "root",
-   "password": "1981",
-   "database": "FINANCIAL_SERVICES_TEST",
    "synchronize": true,
+   "logging": false,
    "entities": [
       "dist/infrastructure/database/entity/*.js"
    ],

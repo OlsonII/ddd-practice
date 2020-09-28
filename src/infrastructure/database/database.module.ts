@@ -1,11 +1,18 @@
-/*import { Module } from '@nestjs/common';
-import { databaseProviders } from './databaseConnection.service';
-import { BankAccountOrm } from './entity/bankAccount.orm.repository';
-import { FinancialMovementOrm } from './entity/financialMovement.orm.repository';
+import { Module } from '@nestjs/common';
+import { bankAccountProviders, financialMovementsProviders } from './migrations/entities.provider';
+import { databaseProviders } from './provider/database.provider';
+
 
 @Module({
-  imports: [BankAccountOrm, FinancialMovementOrm],
-  providers: [...databaseProviders],
-  exports: [...databaseProviders]
+  providers: [
+    ...databaseProviders,
+    ...bankAccountProviders,
+    ...financialMovementsProviders
+  ],
+  exports: [
+    ...databaseProviders,
+    ...bankAccountProviders,
+    ...financialMovementsProviders
+  ]
 })
-export class DatabaseModule{}*/
+export class DatabaseModule{}

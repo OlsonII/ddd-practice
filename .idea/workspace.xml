@@ -13,18 +13,41 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="Olsonii" />
+    <option name="SERVER_URL" value="https://olsonlabs.beta.teamcity.com" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="All run">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/factory/bankAccount.factory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infrastructure/contracts/unitOfWork.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/infrastructure/unitOfWork/unitOfWork.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ormconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ormconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/application.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/application.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/consignBankAccount.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/consignBankAccount.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/createBankAccount.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/createBankAccount.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/searchAllBankAccounts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/searchAllBankAccounts.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/base/generic.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/base/generic.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/repositories/financialMovement.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/repositories/financialMovement.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/bankAccount.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/bankAccount.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/controllers.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/controllers.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/database.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/databaseConnection.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/migrations/1600613278670-nueva.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/database/migrations/1600613278670-nueva.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/infrastructure.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/infrastructure.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/repositories/bankAccount.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/repositories/bankAccount.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.e2e-spec.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,48 +78,72 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\Proyectos\Node\Nest\ddd-practice\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="D:\Proyectos\Node\Nest\ddd-practice\node_modules\typescript\lib" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="D:\Proyectos\Node\ddd-practice\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\database\migrations" />
-      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\base" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Proyectos\Node\Nest\ddd-practice" />
       <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\application" />
       <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\database" />
       <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\domain" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proyectos\Node\ddd-practice\src\infrastructure\unitOfWork" />
+      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\database\migrations" />
+      <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\base" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.start:dev">
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+  <component name="RunManager" selected="Jest.BankAccount.test.ts">
+    <configuration name="Bank Account Tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" />
+      <test-names>
+        <test-name value="Bank Account Tests" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="start:debug" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start:debug" />
-      </scripts>
+    <configuration name="Bank Account Tests.create Bank Account" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" />
+      <test-names>
+        <test-name value="Bank Account Tests" />
+        <test-name value="create Bank Account" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="BankAccount.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" />
       <method v="2" />
     </configuration>
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -109,11 +156,28 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="Bank Account Tests" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts</test-file>
+      <test-names>
+        <name value="Bank Account Tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.BankAccount.test.ts" />
+        <item itemvalue="Jest.Bank Account Tests.create Bank Account" />
         <item itemvalue="npm.start:dev" />
-        <item itemvalue="npm.start:debug" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.Bank Account Tests" />
+        <item itemvalue="Mocha.Bank Account Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -135,6 +199,11 @@
       <workItem from="1600652026112" duration="37000" />
       <workItem from="1600652438430" duration="9071000" />
       <workItem from="1600687794362" duration="2813000" />
+      <workItem from="1601124416794" duration="696000" />
+      <workItem from="1601128712188" duration="1396000" />
+      <workItem from="1601166203033" duration="5636000" />
+      <workItem from="1601211291387" duration="8865000" />
+      <workItem from="1601230842267" duration="15618000" />
     </task>
     <task id="LOCAL-00001" summary="All run">
       <created>1600661411876</created>
@@ -180,14 +249,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="All run" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1600485084961">
+    <state x="828" y="412" key="#ESLint" timestamp="1601236449849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600485084961" />
+    <state x="828" y="412" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1601236449849" />
+    <state x="1032" y="182" width="816" height="729" key="#Intentions" timestamp="1601167945481">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="182" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1601167945481" />
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1601231126348">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601231126348" />
     <state x="1170" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600488363812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600488363812" />
+    <state width="878" height="466" key="DebuggerActiveHint" timestamp="1601215250580">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="878" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1601215250580" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1600615612183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -200,81 +281,118 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="774" y="223" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600616242858" />
-    <state width="1899" height="360" key="GridCell.Tab.0.bottom" timestamp="1600690181498">
+    <state width="1899" height="375" key="GridCell.Tab.0.bottom" timestamp="1601260697666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600690181498" />
-    <state width="1899" height="360" key="GridCell.Tab.0.center" timestamp="1600690181498">
+    <state width="1899" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601260697666" />
+    <state width="1899" height="375" key="GridCell.Tab.0.center" timestamp="1601260697666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600690181498" />
-    <state width="1899" height="360" key="GridCell.Tab.0.left" timestamp="1600690181498">
+    <state width="1899" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601260697666" />
+    <state width="1899" height="375" key="GridCell.Tab.0.left" timestamp="1601260697666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600690181498" />
-    <state width="1899" height="360" key="GridCell.Tab.0.right" timestamp="1600690181498">
+    <state width="1899" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601260697666" />
+    <state width="1899" height="375" key="GridCell.Tab.0.right" timestamp="1601260697666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="360" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600690181498" />
-    <state width="1899" height="338" key="GridCell.Tab.1.bottom" timestamp="1600661608105">
+    <state width="1899" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601260697666" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608105" />
-    <state width="1899" height="338" key="GridCell.Tab.1.center" timestamp="1600661608105">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608105" />
-    <state width="1899" height="338" key="GridCell.Tab.1.left" timestamp="1600661608105">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608105" />
-    <state width="1899" height="338" key="GridCell.Tab.1.right" timestamp="1600661608105">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608105" />
-    <state width="1899" height="338" key="GridCell.Tab.2.bottom" timestamp="1600661608106">
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608106" />
-    <state width="1899" height="338" key="GridCell.Tab.2.center" timestamp="1600661608106">
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.2.center" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608106" />
-    <state width="1899" height="338" key="GridCell.Tab.2.left" timestamp="1600661608105">
+    <state width="1899" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.2.left" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608105" />
-    <state width="1899" height="338" key="GridCell.Tab.2.right" timestamp="1600661608106">
+    <state width="1899" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.2.right" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608106" />
-    <state width="1899" height="338" key="GridCell.Tab.3.bottom" timestamp="1600661608106">
+    <state width="1899" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608106" />
-    <state width="1899" height="338" key="GridCell.Tab.3.center" timestamp="1600661608106">
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.3.center" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608106" />
-    <state width="1899" height="338" key="GridCell.Tab.3.left" timestamp="1600661608106">
+    <state width="1899" height="348" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.3.left" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608106" />
-    <state width="1899" height="338" key="GridCell.Tab.3.right" timestamp="1600661608106">
+    <state width="1899" height="348" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.3.right" timestamp="1601260681119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="338" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600661608106" />
+    <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601130031801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601130031801" />
     <state x="783" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600661426139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="783" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600661426139" />
-    <state x="1216" y="296" key="refactoring.ChangeSignatureDialog" timestamp="1600354511177">
+    <state x="1216" y="296" key="refactoring.ChangeSignatureDialog" timestamp="1601168708385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1216" y="296" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600354511177" />
+    <state x="1216" y="296" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601168708385" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600688701546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600688701546" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main.ts</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app.module.ts</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JavaScriptTestRunnerJest">
+        <watch expression="unitOfWork.queryRunner" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

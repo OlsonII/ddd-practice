@@ -10,9 +10,7 @@ import { SearchAllBankAccountsService } from './searchAllBankAccounts.service';
 @Module({
   imports: [
     BankAccount,
-    InfrastructureModule
-  ],
-  providers: [
+    InfrastructureModule,
     CreateBankAccountService,
     ConsignBankAccountService,
     SearchAllBankAccountsService

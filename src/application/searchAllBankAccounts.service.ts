@@ -3,22 +3,19 @@ import { BankAccountRepository } from '../infrastructure/repositories/bankAccoun
 import { Connection } from 'typeorm';
 import { Injectable } from '@nestjs/common';
 import { FinancialMovementRepository } from '../infrastructure/repositories/financialMovement.repository';
+import { IUnitOfWork } from '../infrastructure/contracts/unitOfWork.interface';
+import { UnitOfWork } from '../infrastructure/unitOfWork/unitOfWork';
 
-@Injectable()
+
 export class SearchAllBankAccountsService{
 
-  accountRepository: BankAccountRepository;
-  financialRepository: FinancialMovementRepository;
-
-  constructor(private readonly connection: Connection) {
-    this.accountRepository = this.connection.getCustomRepository(BankAccountRepository);
-    this.financialRepository = this.connection.getCustomRepository(FinancialMovementRepository);
-  }
+  constructor(private readonly _unitOfWork: IUnitOfWork) {}
 
   async execute() : Promise<SearchAllBankAccountsResponse>{
-    const accounts: BankAccountOrm[] = await this.accountRepository.searchAll();
+    await this._unitOfWork.start();
+    const accounts: BankAccountOrm[] = await this._unitOfWork.bankAccountRepository.searchAll();
     for (let i = 0; i < accounts.length; i++){
-      accounts[i].movements = await this.financialRepository.searchAllById(accounts[i].number);
+      accounts[i].movements = await this._unitOfWork.financialMovementRepository.searchAllById(accounts[i].number);
     }
     console.log(accounts);
     return new SearchAllBankAccountsResponse(accounts);
