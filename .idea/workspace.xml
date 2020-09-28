@@ -24,30 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="All run">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/factory/bankAccount.factory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/contracts/unitOfWork.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/infrastructure/unitOfWork/unitOfWork.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/domainTest/domain.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ormconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ormconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/application.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/application.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/consignBankAccount.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/consignBankAccount.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/createBankAccount.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/createBankAccount.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/searchAllBankAccounts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/searchAllBankAccounts.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/bankAccount.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/bankAccount.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/controllers.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/controllers.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/database.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/databaseConnection.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/database/migrations/1600613278670-nueva.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/database/migrations/1600613278670-nueva.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/infrastructure.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/infrastructure.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/repositories/bankAccount.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/repositories/bankAccount.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/entity/savingsAccount.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/entity/savingsAccount.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +136,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Bank Account Tests" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="savingAccountTest" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -165,19 +145,19 @@
       <ui>bdd</ui>
       <extra-mocha-options>--require ts-node/register</extra-mocha-options>
       <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts</test-file>
+      <test-file>$PROJECT_DIR$/test/domainTest/domain.test.ts</test-file>
       <test-names>
-        <name value="Bank Account Tests" />
+        <name value="savingAccountTest" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Jest.BankAccount.test.ts" />
+        <item itemvalue="Mocha.savingAccountTest" />
         <item itemvalue="Jest.Bank Account Tests.create Bank Account" />
         <item itemvalue="npm.start:dev" />
         <item itemvalue="Jest.Bank Account Tests" />
-        <item itemvalue="Mocha.Bank Account Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +183,8 @@
       <workItem from="1601128712188" duration="1396000" />
       <workItem from="1601166203033" duration="5636000" />
       <workItem from="1601211291387" duration="8865000" />
-      <workItem from="1601230842267" duration="15618000" />
+      <workItem from="1601230842267" duration="15898000" />
+      <workItem from="1601295239862" duration="2543000" />
     </task>
     <task id="LOCAL-00001" summary="All run">
       <created>1600661411876</created>
@@ -257,6 +238,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="182" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1601167945481" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601296565730">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601296565730" />
     <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1601231126348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -281,70 +266,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="774" y="223" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600616242858" />
-    <state width="1899" height="375" key="GridCell.Tab.0.bottom" timestamp="1601260697666">
+    <state width="1899" height="375" key="GridCell.Tab.0.bottom" timestamp="1601298296599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601260697666" />
-    <state width="1899" height="375" key="GridCell.Tab.0.center" timestamp="1601260697666">
+    <state width="1899" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601298296599" />
+    <state width="1899" height="375" key="GridCell.Tab.0.center" timestamp="1601298296598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601260697666" />
-    <state width="1899" height="375" key="GridCell.Tab.0.left" timestamp="1601260697666">
+    <state width="1899" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601298296598" />
+    <state width="1899" height="375" key="GridCell.Tab.0.left" timestamp="1601298296598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601260697666" />
-    <state width="1899" height="375" key="GridCell.Tab.0.right" timestamp="1601260697666">
+    <state width="1899" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601298296598" />
+    <state width="1899" height="375" key="GridCell.Tab.0.right" timestamp="1601298296599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601260697666" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1601260681119">
+    <state width="1899" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601298296599" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.2.bottom" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.2.center" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.2.center" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.2.left" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.2.left" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.2.right" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.2.right" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.3.bottom" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom" timestamp="1601263104504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.3.center" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104504" />
+    <state width="1899" height="348" key="GridCell.Tab.3.center" timestamp="1601263104504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.3.left" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104504" />
+    <state width="1899" height="348" key="GridCell.Tab.3.left" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
-    <state width="1899" height="348" key="GridCell.Tab.3.right" timestamp="1601260681119">
+    <state width="1899" height="348" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104503" />
+    <state width="1899" height="348" key="GridCell.Tab.3.right" timestamp="1601263104504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601260681119" />
+    <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104504" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1601130031801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -368,20 +353,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/main.ts</url>
           <line>5</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/app.module.ts</url>
           <line>8</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts</url>
-          <line>34</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

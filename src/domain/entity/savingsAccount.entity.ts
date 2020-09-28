@@ -25,7 +25,7 @@ export class SavingsAccount extends BankAccount{
     if(!this.validateMonthWithdrawals()) transaction.value += this.costWithdrawal;
     const newBalance: number = this.balance - transaction.value;
     if(newBalance >= this.maxWithdrawal){
-      let movement: FinancialMovement = new FinancialMovement();
+      const movement: FinancialMovement = new FinancialMovement();
       movement.withdrawalValue = transaction.value;
       movement.movementDate = Date();
       this.balance = newBalance;
@@ -34,13 +34,13 @@ export class SavingsAccount extends BankAccount{
   }
 
   private validateMonthWithdrawals(): boolean {
-    let month: number = new Date().getMonth();
-    let year: number = new Date().getFullYear()
-    let count: number = 0;
+    const month: number = new Date().getMonth();
+    const year: number = new Date().getFullYear()
+    let count = 0;
 
     for (let _i = 0; _i < this.movements.length; _i++){
-      let monthOfMovement: number = new Date(this.movements[_i].movementDate).getMonth();
-      let yearOfMovement: number = new Date(this.movements[_i].movementDate).getFullYear();
+      const monthOfMovement: number = new Date(this.movements[_i].movementDate).getMonth();
+      const yearOfMovement: number = new Date(this.movements[_i].movementDate).getFullYear();
       if(year == yearOfMovement && month == monthOfMovement){
         count++;
       }
@@ -49,8 +49,7 @@ export class SavingsAccount extends BankAccount{
   }
 
   private verifyFirstConsign() : boolean {
-    if (this.movements == undefined){
-      this.movements = []
+    if (this.movements.length == 0){
       return true;
     }
     return false;
