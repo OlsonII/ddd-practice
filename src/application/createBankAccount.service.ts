@@ -10,7 +10,7 @@ export class CreateBankAccountService{
   constructor(private readonly _unitOfWork : IUnitOfWork) { }
 
   public async execute(request: CreateBankAccountRequest): Promise<CreateBankAccountResponse>{
-    await this._unitOfWork.start();
+
     let newBankAccount: BankAccount;
     const bankAccount = await this._unitOfWork.bankAccountRepository.searchData(request.number);
     if (bankAccount == undefined){
@@ -19,7 +19,8 @@ export class CreateBankAccountService{
       newBankAccount.city = request.city;
       newBankAccount.balance = 0;
       newBankAccount.name = request.name;
-      newBankAccount.movements = []
+      newBankAccount.movements = [];
+      await this._unitOfWork.start();
       const savedData = await this._unitOfWork.bankAccountRepository.saveData(newBankAccount);
       return new CreateBankAccountResponse('Cuenta de '+ request.type + ' ' + savedData.number + ' creada satisfactoriamente');
     }

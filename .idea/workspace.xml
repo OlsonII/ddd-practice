@@ -23,11 +23,10 @@
     <option name="SERVER_URL" value="https://olsonlabs.beta.teamcity.com" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="All run">
-      <change afterPath="$PROJECT_DIR$/test/domainTest/domain.test.ts" afterDir="false" />
+    <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="Ajuste de tests y correcciones menores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/entity/savingsAccount.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/entity/savingsAccount.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/bankAccount.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/bankAccount.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +183,12 @@
       <workItem from="1601166203033" duration="5636000" />
       <workItem from="1601211291387" duration="8865000" />
       <workItem from="1601230842267" duration="15898000" />
-      <workItem from="1601295239862" duration="2543000" />
+      <workItem from="1601295239862" duration="3903000" />
+      <workItem from="1601385471176" duration="240000" />
+      <workItem from="1601385733034" duration="1043000" />
+      <workItem from="1601426354412" duration="2456000" />
+      <workItem from="1601437616452" duration="448000" />
+      <workItem from="1601467252495" duration="612000" />
     </task>
     <task id="LOCAL-00001" summary="All run">
       <created>1600661411876</created>
@@ -207,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600661601463</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ajuste de tests y correcciones menores">
+      <created>1601298624712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601298624712</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +238,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="All run" />
-    <option name="LAST_COMMIT_MESSAGE" value="All run" />
+    <MESSAGE value="Ajuste de tests y correcciones menores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste de tests y correcciones menores" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="412" key="#ESLint" timestamp="1601236449849">
@@ -266,22 +278,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="774" y="223" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600616242858" />
-    <state width="1899" height="375" key="GridCell.Tab.0.bottom" timestamp="1601298296599">
+    <state width="936" height="371" key="GridCell.Tab.0.bottom" timestamp="1601469859039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601298296599" />
-    <state width="1899" height="375" key="GridCell.Tab.0.center" timestamp="1601298296598">
+    <state width="936" height="371" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601469859039" />
+    <state width="936" height="371" key="GridCell.Tab.0.center" timestamp="1601469859039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="375" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601298296598" />
-    <state width="1899" height="375" key="GridCell.Tab.0.left" timestamp="1601298296598">
+    <state width="936" height="371" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601469859039" />
+    <state width="936" height="371" key="GridCell.Tab.0.left" timestamp="1601469859039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="375" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601298296598" />
-    <state width="1899" height="375" key="GridCell.Tab.0.right" timestamp="1601298296599">
+    <state width="936" height="371" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601469859039" />
+    <state width="936" height="371" key="GridCell.Tab.0.right" timestamp="1601469859039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="375" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601298296599" />
+    <state width="936" height="371" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601469859039" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -330,10 +342,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601263104504" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1601130031801">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601385712703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601130031801" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601385712703" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601298641068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601298641068" />
     <state x="783" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600661426139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -354,11 +370,6 @@
           <url>file://$PROJECT_DIR$/src/main.ts</url>
           <line>5</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app.module.ts</url>
-          <line>8</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

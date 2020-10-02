@@ -17,7 +17,6 @@ export class ConsignBankAccountService{
   constructor(private readonly _unitOfWork: IUnitOfWork) {}
 
   async execute(request: ConsignBankAccountRequest) : Promise<ConsignBankAccountResponse>{
-    await this._unitOfWork.start();
     const accountOrm = await this._unitOfWork.bankAccountRepository.searchData(request.number);
     accountOrm.movements = await this._unitOfWork.financialMovementRepository.searchAllById(accountOrm.number);
     if(accountOrm != undefined){
@@ -28,6 +27,7 @@ export class ConsignBankAccountService{
       bankAccount.balance = accountOrm.balance;
       bankAccount.movements = accountOrm.movements;
       bankAccount.consign(new Transaction(request.value, request.city));
+      await this._unitOfWork.start();
       await this._unitOfWork.bankAccountRepository.saveData(bankAccount);
       await this._unitOfWork.financialMovementRepository.saveData(bankAccount.movements[bankAccount.movements.length - 1]);
       return new CreateBankAccountResponse('Se consignaron ' + request.value + ' a la cuenta: ' + bankAccount.number + ' balance total: ' + bankAccount.balance);

@@ -12,9 +12,9 @@ export class SearchAllBankAccountsService{
   constructor(private readonly _unitOfWork: IUnitOfWork) {}
 
   async execute() : Promise<SearchAllBankAccountsResponse>{
-    await this._unitOfWork.start();
     const accounts: BankAccountOrm[] = await this._unitOfWork.bankAccountRepository.searchAll();
     for (let i = 0; i < accounts.length; i++){
+      await this._unitOfWork.start();
       accounts[i].movements = await this._unitOfWork.financialMovementRepository.searchAllById(accounts[i].number);
     }
     console.log(accounts);

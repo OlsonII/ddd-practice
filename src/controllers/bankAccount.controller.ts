@@ -19,7 +19,7 @@ export class BankAccountController{
   @Post()
   async createBankAccount(@Body() request: CreateBankAccountRequest){
     const service: CreateBankAccountService = new CreateBankAccountService(this._unitOfWork);
-    const res: CreateBankAccountResponse = await this._unitOfWork.complete(async () => await service.execute(request))
+    const res: CreateBankAccountResponse = await this._unitOfWork.complete(async () => await service.execute(request));
     return res.message;
   }
 
