@@ -23,10 +23,9 @@
     <option name="SERVER_URL" value="https://olsonlabs.beta.teamcity.com" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="Ajuste de tests y correcciones menores">
+    <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="Ajustes menores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/bankAccount.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/bankAccount.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/infrastructure.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/infrastructure.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <recent name="D:\Proyectos\Node\Nest\ddd-practice\src\infrastructure\base" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.BankAccount.test.ts">
+  <component name="RunManager" selected="npm.start:dev">
     <configuration name="Bank Account Tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -152,10 +151,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="Jest.BankAccount.test.ts" />
         <item itemvalue="Mocha.savingAccountTest" />
         <item itemvalue="Jest.Bank Account Tests.create Bank Account" />
-        <item itemvalue="npm.start:dev" />
         <item itemvalue="Jest.Bank Account Tests" />
       </list>
     </recent_temporary>
@@ -189,6 +188,12 @@
       <workItem from="1601426354412" duration="2456000" />
       <workItem from="1601437616452" duration="448000" />
       <workItem from="1601467252495" duration="612000" />
+      <workItem from="1601651325403" duration="231000" />
+      <workItem from="1601940226923" duration="1388000" />
+      <workItem from="1601942358577" duration="62000" />
+      <workItem from="1602338397712" duration="681000" />
+      <workItem from="1602454449550" duration="267000" />
+      <workItem from="1602862975961" duration="1340000" />
     </task>
     <task id="LOCAL-00001" summary="All run">
       <created>1600661411876</created>
@@ -218,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601298624712</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajustes menores">
+      <created>1601651455103</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601651455104</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +251,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="All run" />
     <MESSAGE value="Ajuste de tests y correcciones menores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajuste de tests y correcciones menores" />
+    <MESSAGE value="Ajustes menores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes menores" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="412" key="#ESLint" timestamp="1601236449849">
@@ -266,10 +279,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="878" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1601215250580" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1600615612183">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1601941785911">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600615612183" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601941785911" />
     <state x="831" y="418" width="729" height="437" key="Github.ShareDialog" timestamp="1600616213549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -346,10 +359,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601385712703" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601298641068">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601651460528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601298641068" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601651460528" />
     <state x="783" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600661426139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

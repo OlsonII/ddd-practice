@@ -2477,7 +2477,7 @@
         "affectsGlobalScope": false
       },
       "../src/domain/entity/savingsaccount.entity.ts": {
-        "version": "81c0d830e4ad8f1bf6b2d261cfda37a8c8e4f3296c604e35d8e7cff548ee6334",
+        "version": "33683e66a8b8cfa950b2bed9474ba81b835eba49c1d9dc1d7e00ce1583fbb3f2",
         "signature": "300844f0cb5e54d96cbcb4bce5af6501366c636106dd8f4322e82818abadf573",
         "affectsGlobalScope": false
       },
@@ -2497,7 +2497,7 @@
         "affectsGlobalScope": false
       },
       "../src/application/createbankaccount.service.ts": {
-        "version": "73ce1515f3a5ae461df3cdda191ecf11f2b35e24a443fd4be7d2697a4e5c1b55",
+        "version": "7bbaf792ab9bf881423477bbb6d5cb6b0b2e93a88185c151df6d04de3e6244f2",
         "signature": "deba77f952a8534a1deabd764072cb021474848b50276fdbe85686889081948a",
         "affectsGlobalScope": false
       },
@@ -2517,17 +2517,17 @@
         "affectsGlobalScope": false
       },
       "../src/infrastructure/infrastructure.module.ts": {
-        "version": "5d1c875cbf9c4b6938106010abf3255507aef51ecfa5358dec6283a1c80a36af",
+        "version": "13435efaf5ad7a1b43c2c265ecb5187f9ff57ac1876c469ddade855a4ce46fef",
         "signature": "743a9c09030816b99fe243369d599175d2973c1a60c77ae9baac1baf49856e3a",
         "affectsGlobalScope": false
       },
       "../src/application/consignbankaccount.service.ts": {
-        "version": "a9f3298d467c780b6a16eb98d97df10a4a7ed774514890ad1f730e909a788a81",
+        "version": "0f5a76dfab4a6026e44829b8a335aba7e2388b2e7d613f534523f2deef0bcca2",
         "signature": "1a37d2b30236a3b11d31e85fef36688314b8e18ae7e12b80c69174b7bd26e37e",
         "affectsGlobalScope": false
       },
       "../src/application/searchallbankaccounts.service.ts": {
-        "version": "bcf203ca03fff4e2cf916fbe6b6aa8ea4afa054e016fc5767faaeb7f8637bc5e",
+        "version": "fea72e470969f150a555001557fc71621c1c633016e660df2846efc6d0019831",
         "signature": "e8a7a06a61bcabea12d76cd2e5793b10c62b4a2f75fffef5fd3cf61db4a23fc2",
         "affectsGlobalScope": false
       },
@@ -2537,7 +2537,7 @@
         "affectsGlobalScope": false
       },
       "../src/controllers/bankaccount.controller.ts": {
-        "version": "c881be830e7fda7fa063b384ce29f703a7e1c0698205d4abe1aafdee04007adf",
+        "version": "0fbff60ce6464e92b876b6f8a91a0b0d9fbb3dc9b6dfa93df1891d378362caf1",
         "signature": "8dff9943edd19afd6a624b413b0df8e8dd6c4dbed87ccfe40ce87dcc7fe19e02",
         "affectsGlobalScope": false
       },
@@ -2592,7 +2592,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "ac037f41b50bae731366329d7d81bd87f913af94140f8bf6f313297fcbdaa09a",
+        "version": "af4b40bf648065034fb84fa956efe841ba3dafa9457235d885f297b2b87fc96e",
         "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88",
         "affectsGlobalScope": false
       },
@@ -2964,11 +2964,6 @@
       "../src/main.ts": {
         "version": "2c04ab0ca5f71ea2a3dcd638b4b9ef2d7b8152aa7a3a9439ad15b63194ffe35f",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "../src/infrastructure/database/migrations/1600613278670-nueva.ts": {
-        "version": "86a1820eda2d0a73ca86b80e3e97d9e6e9c5c0d298ee65a96ca5dba4cae213a7",
-        "signature": "e8e38fd350fa18bbddadbb1aa1652b272e91e5ee6357d6e00f99d1d223bb1274",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -5944,9 +5939,6 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/infrastructure/database/entity/bankaccount.orm.repository.ts"
       ],
-      "../src/infrastructure/database/migrations/1600613278670-nueva.ts": [
-        "../node_modules/typeorm/index.d.ts"
-      ],
       "../src/infrastructure/database/migrations/entities.provider.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/infrastructure/database/entity/bankaccount.orm.repository.ts",
@@ -5958,8 +5950,6 @@
       "../src/infrastructure/infrastructure.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/infrastructure/database/database.module.ts",
-        "../src/infrastructure/repositories/bankaccount.repository.ts",
-        "../src/infrastructure/repositories/financialmovement.repository.ts",
         "../src/infrastructure/unitofwork/unitofwork.ts"
       ],
       "../src/infrastructure/repositories/bankaccount.repository.ts": [
@@ -8408,9 +8398,6 @@
       "../src/infrastructure/database/entity/bankaccount.orm.repository.ts": [
         "../src/infrastructure/database/entity/financialmovement.orm.repository.ts"
       ],
-      "../src/infrastructure/database/migrations/1600613278670-nueva.ts": [
-        "../node_modules/typeorm/index.d.ts"
-      ],
       "../src/infrastructure/database/migrations/entities.provider.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/infrastructure/database/entity/bankaccount.orm.repository.ts",
@@ -9117,7 +9104,6 @@
       "../src/infrastructure/database/database.module.ts",
       "../src/infrastructure/database/entity/bankaccount.orm.repository.ts",
       "../src/infrastructure/database/entity/financialmovement.orm.repository.ts",
-      "../src/infrastructure/database/migrations/1600613278670-nueva.ts",
       "../src/infrastructure/database/migrations/entities.provider.ts",
       "../src/infrastructure/database/provider/database.provider.ts",
       "../src/infrastructure/infrastructure.module.ts",
