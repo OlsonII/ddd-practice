@@ -12,7 +12,7 @@ export class CreateBankAccountService{
   public async execute(request: CreateBankAccountRequest): Promise<CreateBankAccountResponse>{
 
     let newBankAccount: BankAccount;
-    const bankAccount = await this._unitOfWork.bankAccountRepository.searchData(request.number);
+    const bankAccount = await this._unitOfWork.bankAccountRepository.findOne(request.number);
     if (bankAccount == undefined){
       newBankAccount = new BankAccountFactory().create(request.type);
       newBankAccount.number = request.number;
@@ -21,7 +21,7 @@ export class CreateBankAccountService{
       newBankAccount.name = request.name;
       newBankAccount.movements = [];
       await this._unitOfWork.start();
-      const savedData = await this._unitOfWork.bankAccountRepository.saveData(newBankAccount);
+      const savedData = await this._unitOfWork.bankAccountRepository.save(newBankAccount);
       return new CreateBankAccountResponse('Cuenta de '+ request.type + ' ' + savedData.number + ' creada satisfactoriamente');
     }
     return new CreateBankAccountResponse('El numero de cuenta ya existe');

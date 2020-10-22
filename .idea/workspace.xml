@@ -23,9 +23,26 @@
     <option name="SERVER_URL" value="https://olsonlabs.beta.teamcity.com" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="Ajustes menores">
+    <list default="true" id="8d807b5c-ba32-4b8c-83b4-c54ce79fe224" name="Default Changelist" comment="Ajustes menores&#10;&#10;v1.0.0">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/infrastructure/infrastructure.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/infrastructure.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/application/consignBankAccount.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/application/consignBankAccount.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/application/consignBankAccount.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/application/consignBankAccount.service.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/application/createBankAccount.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/application/createBankAccount.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/application/createBankAccount.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/application/createBankAccount.service.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/application/searchAllBankAccounts.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/application/searchAllBankAccounts.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/application/searchAllBankAccounts.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/application/searchAllBankAccounts.service.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/controllers/bankAccount.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controllers/bankAccount.controller.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/domain/entity/savingsAccount.entity.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/domain/entity/savingsAccount.entity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/domain/entity/savingsAccount.entity.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/domain/entity/savingsAccount.entity.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infrastructure/infrastructure.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infrastructure/infrastructure.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infrastructure/infrastructure.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infrastructure/infrastructure.module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/consignBankAccount.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/consignBankAccount.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/createBankAccount.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/createBankAccount.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/searchAllBankAccounts.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/searchAllBankAccounts.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/base/generic.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/base/generic.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/contracts/repo.interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/infrastructure/contracts/unitOfWork.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/infrastructure/contracts/unitOfWork.interface.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +104,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.start:dev">
-    <configuration name="Bank Account Tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" />
-      <test-names>
-        <test-name value="Bank Account Tests" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Bank Account Tests.create Bank Account" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -122,6 +126,16 @@
       <envs />
       <scope-kind value="TEST_FILE" />
       <test-file value="$PROJECT_DIR$/test/applicationTest/BankAccount.test.ts" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bankAccount.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/test/applicationTest/bankAccount.test.ts" />
       <method v="2" />
     </configuration>
     <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -152,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start:dev" />
+        <item itemvalue="Jest.bankAccount.test.ts" />
         <item itemvalue="Jest.BankAccount.test.ts" />
         <item itemvalue="Mocha.savingAccountTest" />
         <item itemvalue="Jest.Bank Account Tests.create Bank Account" />
-        <item itemvalue="Jest.Bank Account Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +207,10 @@
       <workItem from="1601942358577" duration="62000" />
       <workItem from="1602338397712" duration="681000" />
       <workItem from="1602454449550" duration="267000" />
-      <workItem from="1602862975961" duration="1340000" />
+      <workItem from="1602862975961" duration="2658000" />
+      <workItem from="1602948162767" duration="565000" />
+      <workItem from="1603027956843" duration="117000" />
+      <workItem from="1603380504073" duration="3381000" />
     </task>
     <task id="LOCAL-00001" summary="All run">
       <created>1600661411876</created>
@@ -230,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601651455104</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ajustes menores&#10;&#10;v1.0.0">
+      <created>1602880543623</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602880543623</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +276,8 @@
     <MESSAGE value="All run" />
     <MESSAGE value="Ajuste de tests y correcciones menores" />
     <MESSAGE value="Ajustes menores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustes menores" />
+    <MESSAGE value="Ajustes menores&#10;&#10;v1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes menores&#10;&#10;v1.0.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="412" key="#ESLint" timestamp="1601236449849">
@@ -271,9 +296,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601231126348" />
-    <state x="1170" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600488363812">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1070" y="-581" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603382492758">
+      <screen x="250" y="-768" width="1360" height="728" />
     </state>
+    <state x="1070" y="-581" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/250.-768.1360.728@250.-768.1360.728" timestamp="1603382492758" />
     <state x="1170" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600488363812" />
     <state width="878" height="466" key="DebuggerActiveHint" timestamp="1601215250580">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -291,22 +317,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="774" y="223" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600616242858" />
-    <state width="936" height="371" key="GridCell.Tab.0.bottom" timestamp="1601469859039">
+    <state width="1899" height="374" key="GridCell.Tab.0.bottom" timestamp="1602884695669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="371" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601469859039" />
-    <state width="936" height="371" key="GridCell.Tab.0.center" timestamp="1601469859039">
+    <state width="1899" height="374" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602884695669" />
+    <state width="1899" height="374" key="GridCell.Tab.0.center" timestamp="1602884695669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="371" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601469859039" />
-    <state width="936" height="371" key="GridCell.Tab.0.left" timestamp="1601469859039">
+    <state width="1899" height="374" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602884695669" />
+    <state width="1899" height="374" key="GridCell.Tab.0.left" timestamp="1602884695669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="371" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601469859039" />
-    <state width="936" height="371" key="GridCell.Tab.0.right" timestamp="1601469859039">
+    <state width="1899" height="374" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602884695669" />
+    <state width="1899" height="374" key="GridCell.Tab.0.right" timestamp="1602884695669">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="371" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601469859039" />
+    <state width="1899" height="374" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602884695669" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1601263104503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -359,10 +385,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601385712703" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601651460528">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602880547315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601651460528" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602880547315" />
     <state x="783" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1600661426139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

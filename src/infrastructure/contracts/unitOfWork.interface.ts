@@ -3,6 +3,7 @@ import { FinancialMovementRepository } from '../repositories/financialMovement.r
 
 export interface IUnitOfWork{
 
+  //REPOSITORIES
   bankAccountRepository: BankAccountRepository;
   financialMovementRepository: FinancialMovementRepository;
 
