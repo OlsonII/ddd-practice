@@ -43,3 +43,6 @@ $ npm run test
 ## Licence
 
   Nest is [MIT licensed](LICENSE).
+  
+## Note
+This investigation is deprecated, please use this as base and keep improving the idea.
